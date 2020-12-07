@@ -1,0 +1,30 @@
+
+.aboutcontainer {
+	padding-bottom: 50px;
+}
+.aboutheading {
+	text-align: center;
+	font-size: 3em;
+}
+
+.aboutblurb {
+	text-align: center;
+	font-size: 1.3em;
+
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-bottom: 20px;
+}
+.type {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+div a:hover {
+  color: black;
+}
+
+div .decoration {
+	color: rgba(255, 75, 0);
+	text-decoration: none;
+}

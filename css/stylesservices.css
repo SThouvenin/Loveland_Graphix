@@ -1,0 +1,41 @@
+
+.active {
+	color: rgba(255, 75, 0);
+}
+
+.servicesheader {
+	clear:both;
+	padding-top: 50px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+
+
+}
+
+h3 {
+	font-size: 3em;
+	text-transform: uppercase;
+	font-family: 'Teko';
+	margin-bottom: -15px;
+}
+.serviceblurb {
+	font-size: 1.2em;
+	font-family: 'Zilla Slab';
+}
+.servicescontainer {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 50px;
+}
+.servicesheader {
+	font-size: 40px;
+}
+
+div a:hover {
+  color: black;
+}
+
+div .decoration {
+	color: rgba(255, 75, 0);
+	text-decoration: none;
+}

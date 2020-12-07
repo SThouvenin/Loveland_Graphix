@@ -1,0 +1,150 @@
+/* Body CSS */
+main {
+	padding-bottom: 50px;
+}
+.contactusheader {
+	clear: both;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 3.5em;
+}
+
+
+.contactusblurb {
+	font-family: 'Zilla Slab';
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-bottom: 35px;
+}
+
+/* FORM */
+.column2 {
+	width: 40%;
+	padding-left: 5%;
+}
+
+.paddingbottom {
+	padding-bottom: 135px;
+	width: 40%;
+	padding-left: 5%;
+}
+
+.visit {
+}
+form {
+	margin-left: 100px;
+}
+
+form {
+	text-align: center;
+	display:inline-block;
+
+}
+
+button {
+	font-family: 'teko';
+	font-size: .6em;
+	letter-spacing: 1px;
+	background-color: black;
+	color: white;
+	margin-top: 20px;
+
+}
+
+textarea {
+	width: 90%;
+	height: 150px;
+}
+
+
+/* Map Section */
+.iframe {
+	width:100%;
+}
+
+
+
+
+/** Media Queries ***/
+
+@media screen and (max-width: 1400px) {
+	iframe {
+	  height: 300px;
+	  width: 300px;
+	  resize: both;
+	  overflow: auto;
+}
+	.column2 {
+		padding-bottom: 200px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.column2 {
+		width: 90%;
+		padding:0;
+		padding-left: 15px;
+		margin: 0;
+	}
+	.paddingbottom {
+		padding-bottom: 200px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+  .contactform {
+  	display: block;
+  	margin:0;
+  	width: 99%;
+  	text-align: center;
+
+  	} 
+
+
+  .column2{
+  	display: block;
+  	width: 99%;
+  	margin:0;
+  	text-align: center;
+  	padding-bottom: 0;
+ }
+ .column2 {
+ 	padding-bottom: 150px;
+ }
+ button {
+ 	margin-bottom: 500px;
+ }
+ 
+ iframe {
+ 	width: 275px;
+ 	height: 300px;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+.column3 {
+	display: block;
+	width: 99%;
+}
+}
+@media screen and (max-width: 600px) {
+
+  .column2 {
+  	display: block;
+  	width: 99%;
+  	margin:0;
+  	text-align: center;
+  	padding-bottom: 0;
+ }
+ .column2 {
+ 	padding-bottom: 80px;
+ }
+}
+
+
+
+
+
+

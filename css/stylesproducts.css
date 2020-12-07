@@ -1,0 +1,32 @@
+
+.productcontainer {
+	padding-bottom: 50px;
+}
+.productheading {
+	text-align: center;
+	font-size: 3em;
+}
+
+.productblurb {
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: -30px;
+	padding-right: 20%;
+	padding-left: 20%;
+
+}
+.type {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+
+div a:hover {
+  color: black;
+}
+
+div .decoration {
+	color: rgba(255, 75, 0);
+	
+}
+
