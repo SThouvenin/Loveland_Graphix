@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loveland Graphix</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styleshome.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<main id="main">
+<header>
+<div class="dropdown__header container1">
+	<h1 hidden> Loveland Graphix Screen Print Co.</h1>
+	<a href="home.html"><img src="img/logo_transparent_small.png" alt="Loveland Graphix, Screen Printing Co Logo" class="formatleft" /></a>
+	<ul class="dropdown__categories">
+		<li class="dropdown__category">
+		<div class="burger"></div>
+		<div class="burger"></div>
+		<div class="burger"></div>
+	<ul class="dropdown__menu navstyle">
+		<li class="paddingleft"><a href="services.html">Services</a></li>
+		<li class="paddingleft"><a href="products.html">Products</a></li>
+		<li class="paddingleft"><a href="about.html">About</a></li>
+		<li class="paddingleft"><a href="contact.html">Contact</a></li>
+	</ul>
+</li>
+</ul>
+</div>
+</header>
+
+<div class="container2">
+	<div class="blurred-img">
+	</div>
+	<img src="img/jumbotron15.jpg" alt="Screen Printer at work" class="jumbotron">
+</div>
+
+<div class="container3">
+	<h3 class="who fade">WHO ARE WE?</h3>
+	<p class="whoblurb"> We are local to Loveland, Ohio, and have been established for over 15 years. Our biggest passion is bringing the ideas of customers like yourself to life. No request is too big or too small! If you dream it, we want to be a part in creating it! We love being a part of the Loveland community and specialize in making sportswear for the local schools in the area. Local businesses are a pleasure to work with and we can help with any event, or regular corporate wear. </p>
+	
+	<button onclick="window.location.href='about.html'" class="framingit">
+      Learn more about us
+      <span></span><span></span><span></span><span></span>
+    </button>
+</div>
+
+<div class="container4">
+	<div class="row">
+		<div class="tshirts"></div>
+	</div>
+</div>
+<div class="container5">
+	<h3 class="orderingheader fade">ORDERING IS AS EASY AS 1-2-3</h3>
+	<p class="orderingblurb">We will help guide you through our process from your initial inquiry to handing over our unique products. We are open for any size order, and guarantee you will love our products! </p>
+
+	<button onclick="window.location.href='services.html'" class="framingit">
+	  Check out our Products
+	  <span></span><span></span><span></span><span></span>
+	</button>
+</div>
+
+<div class="container6">
+	<div class="row">
+		<div class="vinal"></div>
+	</div>
+</div>
+
+
+<div class="container7 ">
+	<!--<h2 class="testiheader">Testimonials</h2>-->
+	<div class="row">
+		<div class="column">
+		<!--	<h4 class="testname">Loveland Dairy Whip</h4>
+			<p>Thank you Dave! Loveland Graphix is the ONLY place we trust to have our LDW crew shirts printed! </p>
+		</div>
+		<div class="column">
+			<h4 class="testname">Loveland Animal Hospital</h4>
+			<p>We are all very pleased with our sweatshirts and T-shirt’s. We bought a variation of pull over hoodies, zip ups and T-shirt’s. Extremely happy with the quality and the follow thru with the customer service to make sure my order was correct. And the turn around time was so rapid! All in all it was less then a week from when we started discussing what we wanted, to picking them up. And believe me I had a lot of questions. I called numerous places and looked up others online. It gets confusing what style/brand is best and they were very helpful and walked me thru it. Thank you!</p>
+		</div>
+		<div class="column">
+			<h4 class="testname">Kid Works</h4>
+			<p>Dave has been a great resource for our business. Very good customer service, attention to detail and offers great suggestions. And of course the graphics are great. </p>
+		</div>
+	</div>
+</div>
+-->
+</main>
+
+<footer>
+
+	<div class="container9">
+	<div class="row">
+	<div class="column3">
+		<h2>Loveland Graphix</h2>
+		<p>10920 Loveland Madeira Rd</p>
+		<p>Loveland, OH 45140</p>
+		<p><a href="mailto:lovelandgraphix@fuse.net" class="link">lovelandgraphix@fuse.net</a></p>
+		<p><a href="tel:513-697-9884" class="link">513-697-9844</a></p>
+	</div>
+	<div class="column3">
+		<h2>Opening Hours</h2>
+		<p>Sunday: Closed</p>
+		<p>Monday: Closed</p>
+		<p>Tuesday: 10:00 AM - 6:00 PM</p>
+		<p>Wednesday: 10:00 AM - 6:00 PM</p>
+		<p>Thursday: 10:00 AM - 6:00 PM</p>
+		<p>Friday: 10:00 AM - 5:00 PM</p>
+		<p>Saturday: 11:00 AM - 2:00 PM</p>
+	</div>
+
+<div class="column3">
+	<h2>Follow Us On Facebook</h2>
+	<a href="https://www.facebook.com/lovelandgraphix"><img src="img/Facebook.png" class="facebook"></a>
+</div>
+	</div>
+	</div>
+
+<p class="center">Established in 2005</p>
+</footer>
+</div>
+
+<script type="text/javascript">
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+</script>
+</body>
+</html>

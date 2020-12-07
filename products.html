@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loveland Graphix</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stylesproducts.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<main id="main">
+<header>
+	<div class="dropdown__header productscontainer1">
+	<h1 hidden> Loveland Graphix Screen Print Co.</h1>
+	<a href="home.html"><img src="img/logo_transparent_small.png" alt="Loveland Graphix, Screen Printing Co Logo" class="formatleft" /></a>
+	<ul class="dropdown__categories">
+		<li class="dropdown__category">
+		<div class="burger"></div>
+		<div class="burger"></div>
+		<div class="burger"></div>
+	<ul class="dropdown__menu navstyle">
+		<li class="paddingleft"><a href="services.html">Services</a></li>
+		<li class="paddingleft activity"><a href="products.html">Products</a></li>
+		<li class="paddingleft"><a href="about.html">About</a></li>
+		<li class="paddingleft"><a href="contact.html">Contact</a></li>
+	</ul>
+</li>
+</ul>
+</div>
+</header>
+<div class="container2">
+	<img src="img/team22.jpg" alt="Team Jerseys" class="jumbotron">
+</div>
+<div class="productcontainer">
+<div class="productofferings">
+	<h2 class="productheading fade">Apparel and Gear Offerings</h2>
+	<p class="productblurb">We only want to provide products that are all around high in quality. High in quality doesn't mean expensive, as we work with all budgets. We can do a single print or enough to supply a large event or company.</p>
+
+	<h3 class="type"><a href="https://niketeam.nike.com/en/en_US/p/shop,download_catalog" class="decoration">NIKE</a></h3>
+
+	<h3 class="type"><a href="https://www.dunbrooke.com/p/catalog/1f92a204-300b-42be-9f4e-a770bcebbe6d/izod" class="decoration">IZOD</a></h3>
+
+	<h3 class="type"><a href="https://issuu.com/fruit-activewear/docs/2020jerzeescatalog-singlepage" class="decoration">Jerzees</a></h3>
+	<h3 class="type"><a href="http://team.champion.com/view_catalog.html" class="decoration">Champion</a></h3>
+	<h3 class="type"><a href="https://issuu.com/fruit-activewear/docs/2020_fruit_of_the_loom_catalog" class="decoration">Fruit of the Loom</a></h3>
+	<h3 class="type">Have a special request? Just ask!</h3>
+</div>
+</div>
+
+
+</main>
+<footer>
+
+	<div class="container9">
+	<div class="row">
+	<div class="column3">
+		<h2>Loveland Graphix</h2>
+		<p>10920 Loveland Madeira Rd</p>
+		<p>Loveland, OH 45140</p>
+		<p><a href="mailto:lovelandgraphix@fuse.net" class="link">lovelandgraphix@fuse.net</a></p>
+		<p><a href="tel:513-697-9884" class="link">513-697-9844</a></p>
+	</div>
+	<div class="column3">
+		<h2>Opening Hours</h2>
+		<p>Sunday: Closed</p>
+		<p>Monday: Closed</p>
+		<p>Tuesday: 10:00 AM - 6:00 PM</p>
+		<p>Wednesday: 10:00 AM - 6:00 PM</p>
+		<p>Thursday: 10:00 AM - 6:00 PM</p>
+		<p>Friday: 10:00 AM - 5:00 PM</p>
+		<p>Saturday: 11:00 AM - 2:00 PM</p>
+	</div>
+
+<div class="column3">
+	<h2>Follow Us On Facebook</h2>
+	<a href="https://www.facebook.com/lovelandgraphix"><img src="img/Facebook.png" class="facebook"></a>
+</div>
+	</div>
+	</div>
+
+<p class="center">Established in 2005</p>
+</footer>
+</div>
+<script type="text/javascript">
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+</script>
+</body>
+</html>

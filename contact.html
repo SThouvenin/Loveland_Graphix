@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loveland Graphix</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stylescontact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<main id="main">
+<header>
+	<div class="dropdown__header container1">
+	<h1 hidden> Loveland Graphix Screen Print Co.</h1>
+	<a href="home.html"><img src="img/logo_transparent_small.png" alt="Loveland Graphix, Screen Printing Co Logo" class="formatleft" /></a>
+	<ul class="dropdown__categories">
+		<li class="dropdown__category">
+		<div class="burger"></div>
+		<div class="burger"></div>
+		<div class="burger"></div>
+	<ul class="dropdown__menu navstyle">
+		<li class="paddingleft"><a href="services.html">Services</a></li>
+		<li class="paddingleft"><a href="products.html">Products</a></li>
+		<li class="paddingleft"><a href="about.html">About</a></li>
+		<li class="paddingleft activity"><a href="contact.html">Contact</a></li>
+	</ul>
+</li>
+</ul>
+</div>
+</header>
+<div class="jumbotrondiv">
+	<img src="img/jumbotron3a.jpg" alt="Screen Printer at work" class="jumbotron">
+</div>
+<h2 class="contactusheader fade">Contact Us</h2>
+<p class="contactusblurb">We are a locally owned company and would be happy to help you with your next big project.  Please fill out the information below and we will be in touch with you soon. You can also call us at (513) 824-2192 for more information about working together.</p>
+
+
+<div class="mapcontainer">
+	<div class="row">
+		<div class="column2 paddingbottom">
+			<form class="contactform">
+			<h3 class="fade"> We'd love to hear from you! </h3>
+			<div><label for="fname" class=inlineform>First name:</label>
+				<input type="text" id="fname" name="fname"></div>
+			<div><lable for="lname" class=inlineform>Last name:</lable>
+				<input type="text" id="lname" name="lname"></div>
+
+			<div><label for="email">Email: </label>
+				<input type="email" id="mail" name="mail"></div>
+
+			<div id="message">
+				<label for="msg">Message or Question: </label>
+			<textarea id="msg" name="message"></textarea></div>
+			<div id="submit">
+				<button type="submit">
+					Submit
+				<span></span><span></span><span></span><span></span>
+				</button>
+			</div>
+			</form>
+			</div>
+
+<div class="column2">
+<h3 class="visit fade">Visit us at our location!</h3>
+<div class="iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.4487194329054!2d-84.2848456!3d39.255384299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884055e5ced80201%3A0x7d3ef9546eb2feb3!2s10920%20Loveland%20Madeira%20Rd%2C%20Loveland%2C%20OH%2045140!5e0!3m2!1sen!2sus!4v1603681379664!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+</div>
+</div>
+</div>
+
+
+</main>
+<footer>
+
+	<div class="container9">
+	<div class="row">
+	<div class="column3">
+		<h2>Loveland Graphix</h2>
+		<p>10920 Loveland Madeira Rd</p>
+		<p>Loveland, OH 45140</p>
+		<p><a href="mailto:lovelandgraphix@fuse.net" class="link">lovelandgraphix@fuse.net</a></p>
+		<p><a href="tel:513-697-9884" class="link">513-697-9844</a></p>
+	</div>
+	<div class="column3">
+		<h2>Opening Hours</h2>
+		<p>Sunday: Closed</p>
+		<p>Monday: Closed</p>
+		<p>Tuesday: 10:00 AM - 6:00 PM</p>
+		<p>Wednesday: 10:00 AM - 6:00 PM</p>
+		<p>Thursday: 10:00 AM - 6:00 PM</p>
+		<p>Friday: 10:00 AM - 5:00 PM</p>
+		<p>Saturday: 11:00 AM - 2:00 PM</p>
+	</div>
+
+<div class="column3">
+	<h2>Follow Us On Facebook</h2>
+	<a href="https://www.facebook.com/lovelandgraphix"><img src="img/Facebook.png" class="facebook" alt="Facebook Icon"></a>
+</div>
+	</div>
+	</div>
+
+<p class="center">Established in 2005</p>
+</footer>
+</div>
+<script type="text/javascript">
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Loveland Graphix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stylesservices.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<main id="main">
+<header>
+	<div class="dropdown__header container1">
+	<h1 hidden> Loveland Graphix Screen Print Co.</h1>
+	<a href="home.html"><img src="img/logo_transparent_small.png" alt="Loveland Graphix, Screen Printing Co Logo" class="formatleft" /></a>
+	<ul class="dropdown__categories">
+		<li class="dropdown__category">
+		<div class="burger"></div>
+		<div class="burger"></div>
+		<div class="burger"></div>
+	<ul class="dropdown__menu navstyle">
+		<li class="paddingleft activity"><a href="services.html">Services</a></li>
+		<li class="paddingleft"><a href="products.html">Products</a></li>
+		<li class="paddingleft"><a href="about.html">About</a></li>
+		<li class="paddingleft"><a href="contact.html">Contact</a></li>
+	</ul>
+</li>
+</ul>
+</div>
+</header>
+<div class="container2">
+	<img src="img/teams22.jpg" alt="Team Jerseys" class="jumbotron">
+</div>
+<div class="servicescontainer">
+<h2 class="servicesheader">Loveland Graphix - We create what you need and more! </h2>
+	<h3 class="fade"> Screen Printing </h3>
+	<p class="serviceblurb"> We print on any type of apparel. From T-shirts and hoodies and we can even custom make jerseys for your team! <br> Click on the link to learn more about <a href="https://www.youtube.com/watch?v=RSpsWewtxXw&ab_channel=MakeSomething" class="decoration">Screen Printing</a>.</p>
+	<h3 class="fade"> Yard Signs</h3>
+	<p class="serviceblurb"> Do you have a company of your own and want to find a way to advertise about out? We create personalized signs for any business or customer. </p>
+	<h3 class="fade"> Embroidery </h3>
+	<p class="serviceblurb"> Embroidery is a craft that has been used throughout history. We can embroider on a many items, and customize hats or shirts for your team. Company shirts with names embroidered are often our biggest sellers! Would you like to learn more about <a href="https://en.wikipedia.org/wiki/Embroidery" class="decoration">Embroidery?</a></p>
+	<h3 class="fade"> Banners</h3>
+	<p class="serviceblurb">We create banners for all occasions! Graduations, baby showers and for any important announcements that you want everyone to know about! What to learn more about the process of making <a href="https://www.onlineprinters.co.uk/magazine/banner-production/" class="decoration">Banners</a>?</p>
+	<h3 class="fade"> Team Wear </h3>
+	<p class="serviceblurb"> We create team attire for any sports teams, and frequently make them for the Loveland Tigers soccer teams </p>
+	<h3 class="fade"> Corporate Apparel </h3>
+	<p class="serviceblurb"> We can put together any design you have in mind for your company. Whether it is regular attire or for a special event, let us help you make it happen in style!</p>
+	<h3 class="fade"> Vinyl Decals </h3>
+	<p class="serviceblurb"> We can help you make custom vinyl decals that are excellent for decorating cars and windows. Vinyl Decals have many benefits compared to Paper Decals or stickers. You can read more about <a href="https://www.gumtoostickers.com/blog/2016/7/15/difference-between-vinyl-custom-stickers-and-paper-custom-stickers#:~:text=Vinyl%20stickers%20are%20quite%20popular,vis%20a%20vis%20paper%20stickers.&text=Clearly%20vinyl%20stickers%20cannot%20be%20torn%20so%20easily." class="decoration">Vinyl Decals</a> and benefits on the link.
+</div>
+
+</main>
+<footer>
+
+	<div class="container9">
+	<div class="row">
+	<div class="column3">
+		<h2>Loveland Graphix</h2>
+		<p>10920 Loveland Madeira Rd</p>
+		<p>Loveland, OH 45140</p>
+		<p><a href="mailto:lovelandgraphix@fuse.net" class="link">lovelandgraphix@fuse.net</a></p>
+		<p><a href="tel:513-697-9884" class="link">513-697-9844</a></p>
+	</div>
+	<div class="column3">
+		<h2>Opening Hours</h2>
+		<p>Sunday: Closed</p>
+		<p>Monday: Closed</p>
+		<p>Tuesday: 10:00 AM - 6:00 PM</p>
+		<p>Wednesday: 10:00 AM - 6:00 PM</p>
+		<p>Thursday: 10:00 AM - 6:00 PM</p>
+		<p>Friday: 10:00 AM - 5:00 PM</p>
+		<p>Saturday: 11:00 AM - 2:00 PM</p>
+	</div>
+
+<div class="column3">
+	<h2>Follow Us On Facebook</h2>
+	<a href="https://www.facebook.com/lovelandgraphix"><img src="img/Facebook.png" class="facebook"></a>
+</div>
+	</div>
+	</div>
+
+<p class="center">Established in 2005</p>
+</footer>
+</div>
+<script type="text/javascript">
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+</script>
+</body>
+</html>
+

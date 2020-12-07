@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loveland Graphix</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/stylesabout.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<main id="main">
+<header>
+	<div class="dropdown__header aboutcontainer1">
+	<h1 hidden> Loveland Graphix Screen Print Co.</h1>
+	<a href="home.html"><img src="img/logo_transparent_small.png" alt="Loveland Graphix, Screen Printing Co Logo" class="formatleft" /></a>
+	<ul class="dropdown__categories">
+		<li class="dropdown__category">
+		<div class="burger"></div>
+		<div class="burger"></div>
+		<div class="burger"></div>
+	<ul class="dropdown__menu navstyle">
+		<li class="paddingleft"><a href="services.html">Services</a></li>
+		<li class="paddingleft"><a href="products.html">Products</a></li>
+		<li class="paddingleft activity"><a href="about.html">About</a></li>
+		<li class="paddingleft"><a href="contact.html">Contact</a></li>
+	</ul>
+</li>
+</ul>
+</div>
+</header>
+<div class="container2">
+	<img src="img/signphone.jpg" alt="Team Jerseys" class="jumbotron">
+</div>
+<div class="aboutcontainer">
+<div class="aboutsection">
+	<h2 class="aboutheading fade">Local to Loveland and Love it!</h2>
+	<p class="aboutblurb"> We love our local teams have have been fortunate enough to have the opportunity to support our community. We are a small family owned and operated business, and will personally work with you get the design you need. To see all the things we offer, please check out our <a href="services.html" class="decoration">Services</a>!</p>
+	<p class="aboutblurb"> We will deliver every job on time, looking exactly what you are expecting. We will treat your order as if it is our #1 priority, because it is! Our staff is vetted and trained to professionally find out and meet the needs and concerns of every client. </p>
+	<p class="aboutblurb"> Graphic Design is our passion and we have dedicated ourself to mastering each and every craft that we offer. For the last 15 years we have worked with many in our community, and we would love to design the best solutions for you as well! </p>
+	
+</div>
+</div>
+
+
+</main>
+<footer>
+
+	<div class="container9">
+	<div class="row">
+	<div class="column3">
+		<h2>Loveland Graphix</h2>
+		<p>10920 Loveland Madeira Rd</p>
+		<p>Loveland, OH 45140</p>
+		<p><a href="mailto:lovelandgraphix@fuse.net" class="link">lovelandgraphix@fuse.net</a></p>
+		<p><a href="tel:513-697-9884" class="link">513-697-9844</a></p>
+	</div>
+	<div class="column3">
+		<h2>Opening Hours</h2>
+		<p>Sunday: Closed</p>
+		<p>Monday: Closed</p>
+		<p>Tuesday: 10:00 AM - 6:00 PM</p>
+		<p>Wednesday: 10:00 AM - 6:00 PM</p>
+		<p>Thursday: 10:00 AM - 6:00 PM</p>
+		<p>Friday: 10:00 AM - 5:00 PM</p>
+		<p>Saturday: 11:00 AM - 2:00 PM</p>
+	</div>
+
+<div class="column3">
+	<h2>Follow Us On Facebook</h2>
+	<a href="https://www.facebook.com/lovelandgraphix"><img src="img/Facebook.png" class="facebook"></a>
+</div>
+	</div>
+	</div>
+
+<p class="center">Established in 2005</p>
+</footer>
+</div>
+<script type="text/javascript">
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+</script>
+</body>
+</html>
